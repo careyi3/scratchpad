@@ -8,8 +8,6 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "fira": "https://github.com/jjt/Fira"
-  },
+  "dependencies": {},
   "module-folder": "src/lib"
 }
