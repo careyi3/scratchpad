@@ -1,0 +1,4 @@
+#! /bin/bash
+
+yarn
+zip -r scratchpad.zip icons/* src/* manifest.json

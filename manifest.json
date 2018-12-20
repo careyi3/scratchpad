@@ -1,0 +1,12 @@
+{
+
+    "manifest_version": 2,
+    "name": "Scratch Pad",
+    "version": "1.0",
+    "description": "Simple note taking app that you can set as your homepage.",
+    "icons": {
+      "48": "icons/scratchpad-48.png",
+      "96": "icons/scratchpad-96.png"
+    },
+    "web_accessible_resources": ["src/index.html"]
+  }
