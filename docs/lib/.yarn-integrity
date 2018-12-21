@@ -1,0 +1,18 @@
+{
+  "systemParams": "darwin-x64-57",
+  "modulesFolders": [
+    "src/lib"
+  ],
+  "flags": [],
+  "linkedModules": [
+    "ember-overlays"
+  ],
+  "topLevelPatterns": [
+    "fira@https://github.com/jjt/Fira"
+  ],
+  "lockfileEntries": {
+    "fira@https://github.com/jjt/Fira": "https://github.com/jjt/Fira#2d4dc1d83153f3bab55ec6deae7d10eaaf15214e"
+  },
+  "files": [],
+  "artifacts": {}
+}
