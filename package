@@ -1,6 +1,7 @@
 #! /bin/bash
 
 yarn
+rm scratchpad.zip
 zip -r scratchpad.zip icons/* src/* buttons/* manifest.json scratchpad.js
 rm -rf ./docs
 cp -r ./src ./docs
