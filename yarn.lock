@@ -5,3 +5,8 @@
 "fira@https://github.com/jjt/Fira":
   version "0.0.0"
   resolved "https://github.com/jjt/Fira#2d4dc1d83153f3bab55ec6deae7d10eaaf15214e"
+
+medium-editor@^5.23.3:
+  version "5.23.3"
+  resolved "https://registry.yarnpkg.com/medium-editor/-/medium-editor-5.23.3.tgz#6fb638759ae2fc76c423feb056f346d9c518d3b7"
+  integrity sha512-he9/TdjX8f8MGdXGfCs8AllrYnqXJJvjNkDKmPg3aPW/uoIrlRqtkFthrwvmd+u4QyzEiadhCCM0EwTiRdUCJw==
