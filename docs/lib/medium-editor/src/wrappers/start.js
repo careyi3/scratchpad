@@ -13,3 +13,7 @@
 }(this, function () {
 
     'use strict';
+    
+    return MediumEditor;
+}()));
+
