@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fira": "https://github.com/jjt/Fira"
+    "fira": "https://github.com/jjt/Fira",
+    "font-awesome": "4.1.0",
+    "medium-editor": "^5.23.3"
   },
   "module-folder": "src/lib"
 }

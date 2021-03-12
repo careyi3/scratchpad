@@ -1,24 +1,49 @@
 html {
-    min-height: 100%;
-    position: relative;
+  min-height: 100%;
 }
 
 body {
-    font-family: 'Fira Mono' !important;
-    height: 100%;
+  font-family: "Fira Mono" !important;
+  height: 100%;
+  color: #2b2d2f;
 }
 
 .editor {
-    position:absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 100px;
-    word-break: break-all;
-    word-wrap: break-word;
+  margin: 100px;
 }
 
 .editor:focus {
-    outline: none;
+  outline: none;
+}
+
+a {
+  color: darkslategrey;
+}
+
+a:hover {
+  color: #2b2d2f;
+}
+
+.editor > ul {
+  margin: 5px 0;
+}
+
+.editor > ul {
+  list-style-type: none;
+}
+
+.editor > ul > li {
+  text-indent: -5px;
+  margin: 5px 0;
+}
+
+.editor > ul > li:before {
+  content: "- ";
+  text-indent: -5px;
+}
+
+blockquote {
+  border-left: 5px solid #2b2d2f;
+  padding-left: 5px;
+  border-radius: 5px;
 }
