@@ -10,19 +10,19 @@ function onPageLoad() {
       buttonLabels: 'fontawesome',
       targetBlank: true,
       toolbar: {
-          buttons: ['h1','h2','h3','bold', 'italic', 'quote', 'anchor', 'unorderedlist', 'orderedlist']
+        buttons: ['h1','h2','h3','bold', 'italic', 'quote', 'anchor', 'unorderedlist', 'orderedlist']
       },
       anchor: {
-          placeholderText: 'Enter Link'
+        placeholderText: 'Enter Link'
       },
       paste: {
-          cleanPastedHTML: true
+        cleanPastedHTML: true
       },
       anchorPreview: {
-          hideDelay: 300
+        hideDelay: 300
       },
       placeholder: {
-          text: 'Click to edit'
+        text: 'Click to start'
       }
     }
   );

@@ -1,0 +1,8 @@
+#! /bin/bash
+
+trap "kill 0" EXIT
+
+watch --wait=10 --interval=20 ./scripts/build ./src &
+live-server --no-browser --port=5000 ./scratchpad/src &
+
+wait
