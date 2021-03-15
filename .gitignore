@@ -40,3 +40,4 @@ obj/
 src/lib/*
 !src/lib/.keep
 node_modules/
+scratchpad/

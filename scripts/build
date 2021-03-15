@@ -1,0 +1,74 @@
+#! /bin/bash
+
+# Install dependencies
+echo 'Installing dependencies...'
+yarn
+
+# Removing build assets
+echo 'Removing build assets...'
+rm -rf ./scratchpad
+mkdir ./scratchpad
+
+# Building
+echo 'Building...'
+
+# Copying Source
+mkdir ./scratchpad/src
+cp ./src/index.html ./scratchpad/src
+cp ./src/favicon.png ./scratchpad/src
+cp ./manifest.json ./scratchpad/
+cp ./scratchpad.js ./scratchpad/
+
+mkdir -p ./scratchpad/icons
+cp ./icons/* ./scratchpad/icons/
+
+mkdir -p ./scratchpad/buttons
+cp ./buttons/* ./scratchpad/buttons/
+
+mkdir -p ./scratchpad/src/js
+cp ./src/js/* ./scratchpad/src/js/
+
+mkdir -p ./scratchpad/src/css
+cp ./src/css/* ./scratchpad/src/css/
+
+# Copying Dependencies
+mkdir ./scratchpad/src/lib
+
+# Fira
+mkdir ./scratchpad/src/lib/fira
+cp ./src/lib/fira/fira.css ./scratchpad/src/lib/fira
+
+mkdir ./scratchpad/src/lib/fira/eot
+cp ./src/lib/fira/eot/* ./scratchpad/src/lib/fira/eot
+
+mkdir ./scratchpad/src/lib/fira/otf
+cp ./src/lib/fira/otf/* ./scratchpad/src/lib/fira/otf
+
+mkdir ./scratchpad/src/lib/fira/ttf
+cp ./src/lib/fira/ttf/* ./scratchpad/src/lib/fira/ttf
+
+mkdir ./scratchpad/src/lib/fira/woff
+cp ./src/lib/fira/woff/* ./scratchpad/src/lib/fira/woff
+
+# Font Awesome
+mkdir -p ./scratchpad/src/lib/font-awesome/css
+cp ./src/lib/font-awesome/css/font-awesome.min.css ./scratchpad/src/lib/font-awesome/css
+
+mkdir -p ./scratchpad/src/lib/font-awesome/fonts
+cp ./src/lib/font-awesome/fonts/* ./scratchpad/src/lib/font-awesome/fonts
+
+# Medium Editor
+mkdir -p ./scratchpad/src/lib/medium-editor/dist/js
+cp ./src/lib/medium-editor/dist/js/medium-editor.min.js ./scratchpad/src/lib/medium-editor/dist/js/
+
+mkdir -p ./scratchpad/src/lib/medium-editor/dist/css
+cp ./src/lib/medium-editor/dist/css/medium-editor.min.css ./scratchpad/src/lib/medium-editor/dist/css/
+
+mkdir -p ./scratchpad/src/lib/medium-editor/dist/css/themes
+cp ./src/lib/medium-editor/dist/css/themes/beagle.min.css ./scratchpad/src/lib/medium-editor/dist/css/themes/
+
+# Versioning
+tar -cf - ./scratchpad | md5 -r > ./scratchpad/version
+
+# Done
+echo 'Done.'

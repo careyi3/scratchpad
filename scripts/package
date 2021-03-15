@@ -1,0 +1,13 @@
+#! /bin/bash
+
+# Building
+echo 'Building...'
+./scripts/build
+
+# Packaging
+echo 'Packaging...'
+rm scratchpad.zip
+zip -r -q scratchpad.zip ./scratchpad
+
+# Done
+echo 'Done.'
