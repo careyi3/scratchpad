@@ -2,7 +2,7 @@
 
     "manifest_version": 2,
     "name": "Scratch Pad",
-    "version": "2.1",
+    "version": "2.3",
     "description": "Simple note taking app that you can set as your homepage.",
     "icons": {
       "48": "icons/scratchpad-48.png",

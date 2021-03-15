@@ -24,21 +24,38 @@ a:hover {
   color: #2b2d2f;
 }
 
-.editor > ul {
+.editor ul {
   margin: 5px 0;
 }
 
-.editor > ul {
+.editor ul {
   list-style-type: none;
 }
 
-.editor > ul > li {
+.editor ul > li {
   text-indent: -5px;
   margin: 5px 0;
 }
 
-.editor > ul > li:before {
+.editor ul > li:before {
   content: "- ";
+  text-indent: -5px;
+}
+
+.editor ol {
+  list-style: none;
+  counter-reset: list-counter;
+  margin: 5px 0;
+}
+
+.editor ol > li {
+  text-indent: -5px;
+  margin: 5px 0;
+  counter-increment: list-counter;
+}
+
+.editor ol > li:before {
+  content: counter(list-counter) ". ";
   text-indent: -5px;
 }
 
