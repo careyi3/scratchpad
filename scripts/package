@@ -7,7 +7,7 @@ echo 'Building...'
 # Packaging
 echo 'Packaging...'
 rm scratchpad.zip
-zip -r -q scratchpad.zip ./scratchpad
+cd scratchpad; zip -r -q ../scratchpad.zip *
 
 # Done
 echo 'Done.'
